@@ -7,46 +7,94 @@
     <title>Alec Winkelman</title>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li>Alec Winkelman</li>
-            <li><a href="#About">About</a></li>
-            <li><a href="#Skills">Skills</a></li>
-            <li><a href="#Projects">Projects</a></li>
-            <li><a href="#Contact">Contact</a></li>
-        </ul>
-    </nav>
+    <div class="bx intro">
+        <h1>Hello, I'm Alec</h1>
+        <h1>I'm a Full-Stack web developer</h1>
+        <button>Learn More</button>
+        <button>Resume</button>
+    </div>
     <main>
-        <div class="bx intro">
-            <p>
-            Hello! I am<br>
-            Alec Winkelman<br>
-            Full-Stack Developer<br>
-            I am a a dedicated and enthusiastic junior full-stack developer with a passion for crafting <br>
-            innovative solutions and creating engaging user experiences. With a solid foundation in both <br>
-            front-end and back-end development, I specialize in building scalable web applications that merge <br>
-            functionality with aesthetics.
-            </p>
-            <button>Resume</button>
-            <h1>Photo Here</h1>
-        </div>
+
+        <nav>
+            <ul class="header">
+                <li><a href="#About">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
         <div class="bx about">
             <h1 class="section-title">About Me</h1>
-            <div class="cd time">
-                <h2>Past</h2>
-                <p>I learned of my passion for coding during my time in college <br>
-                    when I took a few coding courses. I did not fully pursue this <br>
-                    passion during my college years but I did apply my coding skills <br>
-                    when I could during and after college.</p>
+            <div class="bx container">
+                <div class="bx overview">
+                    <h1>Photo Here</h1>
+                    <h2>Full-Stack Developer</h2>
+                    <p>
+                        I am a a dedicated and enthusiastic junior full-stack developer with a passion for crafting <br>
+                        innovative solutions and creating engaging user experiences. With a solid foundation in both <br>
+                        front-end and back-end development, I specialize in building scalable web applications that merge <br>
+                        functionality with aesthetics.
+                    </p>
+                </div>
+                <div class="bx skills">
+                    <h1 class="section-title">Skills</h1>
+                    <h2>Front-End</h2>
+                    <ul>
+                        <li class="skill">HTML</li>
+                        <li class="skill">CSS</li>
+                        <li class="skill">Javascript</li>
+                        <li class="skill">Typescript</li>
+                        <li class="skill">Firebase</li>
+                    </ul>
+                    <h2>Back-End</h2>
+                    <ul>
+                        <li class="skill">NodeJs</li>
+                        <li class="skill">Flask</li>
+                        <li class="skill">MongoDB</li>
+                    </ul>
+                    <h2>Misc</h2>
+                    <ul>
+                        <li class="skill">Rest APIs</li>
+                        <li class="skill">Webpack</li>
+                    </ul>
+                </div>
             </div>
-            <div class="cd time">
-                <h2>Present</h2>
-                <p></p>
+        </div>
+        <div class="bx project-list">
+            <h1 class="section-title">Projects</h1>
+            <div class="bx project">
+                <img src="./images/photohunt.png" alt="PhotoHunt Display">
+                <div class="project-details">
+                    <h2>PhotoHunt</h2>
+                    <h2>Photo Tagging Game</h2>
+                    <p>Full-Stack web application that mimics a "where's waldo" game. <br>Built with EJS templates, NodeJs, ExpressJS, and MongoDB</p>
+                    <button>Live Preview</button>
+                    <button>Github</button>
+                </div>
             </div>
-            <div class="cd time">
-                <h2>Future</h2>
-                <p></p>
+            <div class="bx project">
+                <div class="project-details">
+                    <h2>Pixel Canvas</h2>
+                    <h2>Pixel Art Creator</h2>
+                    <p>Front-End application for creating fun pixel art.<br>Built with standard HTML, CSS, and Javascript</p>
+                    <button>Live Preview</button>
+                    <button>Github</button>
+                </div>
+                <img src="./images/pixelcanvas.png" alt="Pixel Canvas Display">
             </div>
+            <div class="bx project">
+                <img src="./images/blackjack.png" alt="Black Jack Display">
+                <div class="project-details">
+                    <h2>BlackJack</h2>
+                    <h2>Black Jack Simulation</h2>
+                    <p>Front-End application that simulates a game of Black Jack. <br>Built with Deck of Cards API to handle the deck logic and Webpack</p>
+                    <button>Live Preview</button>
+                    <button>Github</button>
+                </div>
+            </div>
+        </div>
+        <div class="bx contact">
+            <h1 class="section-title">Contact</h1>
         </div>
         <div class="bx skills">
             <h1 class="section-title">Skills</h1>
@@ -69,18 +117,21 @@
                 <li class="skill">Rest APIs</li>
                 <li class="skill">Webpack</li>
             </ul>
-        </div>
-        <div class="bx projects">
-            <h1 class="section-title">Projects</h1>
-            <div class="project">
-                <h2>PhotoHunt</h2>
+            <div class="cd time">
+                <h2>Past</h2>
+                <p>I learned of my passion for coding during my time in college <br>
+                    when I took a few coding courses. I did not fully pursue this <br>
+                    passion during my college years but I did apply my coding skills <br>
+                    when I could during and after college.</p>
             </div>
-            <div class="project">
-                <h2>BlackJack</h2>
+            <div class="cd time">
+                <h2>Present</h2>
+                <p></p>
             </div>
-        </div>
-        <div class="bx contact">
-            <h1 class="section-title"></h1>
+            <div class="cd time">
+                <h2>Future</h2>
+                <p></p>
+            </div>
         </div>
     </main>
     <footer>
