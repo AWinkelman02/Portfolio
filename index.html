@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="output.css">
     <title>Alec Winkelman</title>
 </head>
 <body>
@@ -11,10 +11,9 @@
         <h1>Hello, I'm Alec</h1>
         <h1>I'm a Full-Stack web developer</h1>
         <button>Learn More</button>
-        <button>Resume</button>
+        <canvas id="particle-canvas"></canvas>
     </div>
     <main>
-
         <nav>
             <ul class="header">
                 <li><a href="#About">Home</a></li>
@@ -23,6 +22,7 @@
                 <li><a href="#Contact">Contact</a></li>
             </ul>
         </nav>
+        <canvas id="canvas"></canvas>
         <div class="bx about">
             <h1 class="section-title">About Me</h1>
             <div class="bx container">
@@ -39,7 +39,7 @@
                 <div class="bx skills">
                     <h1 class="section-title">Skills</h1>
                     <h2>Front-End</h2>
-                    <ul>
+                    <ul class="skill-list">
                         <li class="skill">HTML</li>
                         <li class="skill">CSS</li>
                         <li class="skill">Javascript</li>
@@ -47,13 +47,13 @@
                         <li class="skill">Firebase</li>
                     </ul>
                     <h2>Back-End</h2>
-                    <ul>
+                    <ul class="skill-list">
                         <li class="skill">NodeJs</li>
                         <li class="skill">Flask</li>
                         <li class="skill">MongoDB</li>
                     </ul>
                     <h2>Misc</h2>
-                    <ul>
+                    <ul class="skill-list">
                         <li class="skill">Rest APIs</li>
                         <li class="skill">Webpack</li>
                     </ul>
@@ -133,10 +133,12 @@
                 <p></p>
             </div>
         </div>
+        
     </main>
     <footer>
-
     </footer>
-    <script src="scripts.js"></script>
+    <button id="resume">Resume</button>
+    <script src="particle-wave.js"></script>
+    <script src="particle-background.js"></script>
 </body>
 </html>
