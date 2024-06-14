@@ -7,37 +7,42 @@
     <title>Alec Winkelman</title>
 </head>
 <body>
-    <div class="bx intro">
-        <h1>Hello, I'm Alec</h1>
-        <h1>I'm a Full-Stack web developer</h1>
-        <button>Learn More</button>
-        <canvas id="particle-canvas"></canvas>
+    <div class="bx intro" id="Home">
+        <h1 class="slide-in-blurred-left">Hello, I'm <span>Alec</span></h1>
+        <h1 class="slide-in-blurred-left">I'm a Full-Stack web developer</h1>
+        <button class="slide-in-blurred-bottom" id="learn-more" class="learn">Learn More</button>
+        <div>
+            <canvas id="particle-canvas"></canvas>
+        </div>
+        
     </div>
     <main>
         <nav>
             <ul class="header">
-                <li><a href="#About">Home</a></li>
-                <li><a href="#About">About</a></li>
-                <li><a href="#Projects">Projects</a></li>
-                <li><a href="#Contact">Contact</a></li>
+                <li><a class="nav-control" data="Home">Home</a></li>
+                <li><a class="nav-control" data="About">About</a></li>
+                <li><a class="nav-control" data="Projects">Projects</a></li>
+                <li><a class="nav-control" data="Contact">Contact</a></li>
             </ul>
         </nav>
-        <canvas id="canvas"></canvas>
-        <div class="bx about">
-            <h1 class="section-title">About Me</h1>
+        <div class="bx about" id="About">
+            <div class="one">
+                <h1 class="section-title">About Me</h1>
+            </div>
+            
             <div class="bx container">
                 <div class="bx overview">
-                    <h1>Photo Here</h1>
+                    <img src="./images/avatar.png" alt="photo" class="photo">
                     <h2>Full-Stack Developer</h2>
                     <p>
-                        I am a a dedicated and enthusiastic junior full-stack developer with a passion for crafting <br>
-                        innovative solutions and creating engaging user experiences. With a solid foundation in both <br>
-                        front-end and back-end development, I specialize in building scalable web applications that merge <br>
+                        I am a a dedicated and enthusiastic junior full-stack developer with a passion for crafting 
+                        innovative solutions and creating engaging user experiences. With a solid foundation in both 
+                        front-end and back-end development, I specialize in building scalable web applications that merge
                         functionality with aesthetics.
                     </p>
                 </div>
                 <div class="bx skills">
-                    <h1 class="section-title">Skills</h1>
+                    <h1>Skills</h1>
                     <h2>Front-End</h2>
                     <ul class="skill-list">
                         <li class="skill">HTML</li>
@@ -60,41 +65,45 @@
                 </div>
             </div>
         </div>
-        <div class="bx project-list">
-            <h1 class="section-title">Projects</h1>
+        <div class="bx project-list" id="Projects">
+            <div class="one">
+                <h1 class="section-title">Projects</h1>
+            </div>
             <div class="bx project">
-                <img src="./images/photohunt.png" alt="PhotoHunt Display">
+                <img src="./images/photohunt.png" alt="PhotoHunt Display" class="project-img-right">
                 <div class="project-details">
-                    <h2>PhotoHunt</h2>
-                    <h2>Photo Tagging Game</h2>
-                    <p>Full-Stack web application that mimics a "where's waldo" game. <br>Built with EJS templates, NodeJs, ExpressJS, and MongoDB</p>
-                    <button>Live Preview</button>
-                    <button>Github</button>
+                    <h2 class="project-title">PhotoHunt</h2>
+                    <h2 class="project-altag">Photo Tagging Game</h2>
+                    <p class="project-desc">Full-Stack web application that mimics a "where's waldo" game. <br>Built with EJS templates, NodeJs, ExpressJS, and MongoDB</p>
+                    <a href="https://photohunt.adaptable.app/"><button class="preview">Live Preview</button></a>
+                    <a href="https://github.com/AWinkelman02/Photo-Tagging-App"><button class="preview">Github</button></a>
                 </div>
             </div>
             <div class="bx project">
                 <div class="project-details">
-                    <h2>Pixel Canvas</h2>
-                    <h2>Pixel Art Creator</h2>
-                    <p>Front-End application for creating fun pixel art.<br>Built with standard HTML, CSS, and Javascript</p>
-                    <button>Live Preview</button>
-                    <button>Github</button>
+                    <h2 class="project-title">Pixel Canvas</h2>
+                    <h2 class="project-altag">Pixel Art Creator</h2>
+                    <p class="project-desc">Front-End application for creating fun pixel art.<br>Built with standard HTML, CSS, and Javascript</p>
+                    <a href="https://awinkelman02.github.io/Pixel-Canvas/"><button class="preview">Live Preview</button></a>
+                    <a href="https://github.com/AWinkelman02/Pixel-Canvas"><button class="preview">Github</button></a>
                 </div>
-                <img src="./images/pixelcanvas.png" alt="Pixel Canvas Display">
+                <img src="./images/pixelcanvas.png" alt="Pixel Canvas Display" class="project-img-left">
             </div>
             <div class="bx project">
-                <img src="./images/blackjack.png" alt="Black Jack Display">
+                <img src="./images/blackjack.png" alt="Black Jack Display" class="project-img-right">
                 <div class="project-details">
-                    <h2>BlackJack</h2>
-                    <h2>Black Jack Simulation</h2>
-                    <p>Front-End application that simulates a game of Black Jack. <br>Built with Deck of Cards API to handle the deck logic and Webpack</p>
-                    <button>Live Preview</button>
-                    <button>Github</button>
+                    <h2 class="project-title">BlackJack</h2>
+                    <h2 class="project-altag">Black Jack Simulation</h2>
+                    <p class="project-desc">Front-End application that simulates a game of Black Jack. <br>Built with "Deck of Cards" API to handle the deck logic and Webpack</p>
+                    <a href="https://awinkelman02.github.io/Black-Jack/"><button class="preview">Live Preview</button></a>
+                    <a href="https://github.com/AWinkelman02/Black-Jack"><button class="preview">Github</button></a>
                 </div>
             </div>
         </div>
-        <div class="bx contact">
-            <h1 class="section-title">Contact</h1>
+        <div class="bx contact" id="Contact">
+            <div class="one">
+                <h1 class="section-title">Contact</h1>
+            </div>
         </div>
         <div class="bx skills">
             <h1 class="section-title">Skills</h1>
@@ -140,5 +149,6 @@
     <button id="resume">Resume</button>
     <script src="particle-wave.js"></script>
     <script src="particle-background.js"></script>
+    <script src="scrolling.js"></script>
 </body>
 </html>
