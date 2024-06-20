@@ -1,5 +1,5 @@
 const navControls = document.getElementsByClassName('nav-control');
-const learnMore = document.getElementById('learn-more');
+//const learnMore = document.getElementById('learn-more');
 
 //learnMore.addEventListener('click', scrollToLocation('About'));
 

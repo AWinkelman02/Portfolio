@@ -52,144 +52,157 @@ span{
 }
 
 button{
-    font-family: "Oswald", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 #resume{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: 101;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 101;
 }
 
 nav{
-    padding: .1vh;
-    background-color: rgb(39, 39, 39);
-    padding-right: 2vw;
-    position: sticky;
-    top: 0;
-    z-index: 6;
+  padding: .1vh;
+  background-color: rgb(39, 39, 39);
+  padding-right: 2vw;
+  position: sticky;
+  top: 0;
+  z-index: 6;
 }
 
 .header{
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    list-style-type: none;
-    gap: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  list-style-type: none;
+  gap: 2rem;
 }
 
 .header a{
-    text-decoration: none;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 .section-title {
-    position: relative;
-    color: #ffffff;
-    font-size: 2.3rem;
-    text-transform: uppercase;
-    margin-bottom: none;
+  position: relative;
+  color: #ffffff;
+  font-size: 2.3rem;
+  text-transform: uppercase;
+  margin-bottom: none;
 }
 
 /* === HEADING STYLE === */
 .one h1 {
-    text-align: center;
-    padding-bottom: 5px;
-    z-index: 4;
+  text-align: center;
+  padding-bottom: 5px;
+  z-index: 4;
+  border: red 1px solid;
 }
 .one h1:before {
-    width: 28px;
-    height: 5px;
-    display: block;
-    content: "";
-    position: absolute;
-    bottom: 3px;
-    left: 50%;
-    margin-left: -14px;
-    background-color: var(--primary1);
+  width: 28px;
+  height: 5px;
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: 3px;
+  left: 50%;
+  margin-left: -14px;
+  background-color: var(--primary1);
 }
 .one h1:after {
-    width: 100px;
-    height: 1px;
-    display: block;
-    content: "";
-    position: relative;
-    margin-top: 10px;
-    left: 50%;
-    margin-left: -50px;
-    background-color: var(--primary1);
+  width: 100px;
+  height: 1px;
+  display: block;
+  content: "";
+  position: relative;
+  margin-top: 10px;
+  left: 50%;
+  margin-left: -50px;
+  background-color: var(--primary1);
 }
 
 /* === About Section === */
 
 .about{
-    border: red 1px solid;
+  border: red 1px solid;
 
-    flex-direction: column;
-    align-items: center;
-    padding-top: 8vh;
-    gap: 10vh;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 8vh;
+  gap: 4vh;
 }
 
 .container{
-    border: red 1px solid;
+  border: red 1px solid;
 
-    justify-content: space-between;
-    width: 60vw;
+  justify-content: space-between;
+  width: 60vw;
 }
 
 .overview{
-    border: red 1px solid;
+  border: red 1px solid;
 
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: large;
-    width: 50%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: large;
+  width: 50%;
 }
 
 .photo{
-    width: 300px;
-    height: auto;
+  width: 300px;
+  height: auto;
 }
 
 .overview p{
-    font-size: 1.3rem;
-    text-align: center;
+  font-size: 1.3rem;
+  text-align: center;
 }
 
 /* === Skills Section === */
 
 .skills{
-    border: red 1px solid;
-
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
 }
 
 .skills h2{
-    text-align: center;
+  text-align: center;
+  margin: 0;
+}
+
+.skill-detail{
+  flex-direction: column;
+  align-items: flex-start;
+  width: 95%;
+  margin-left: 5%;
 }
 
 .skill-list{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    gap: 3px;
+  width: inherit;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 3%;
 }
 
-.skill-list li{
+.skill{
+  border: var(--primary1) 1px solid;
+  padding: 3%;
+  transition: all .5s ease;
+}
 
+.skill:hover{
+  cursor: pointer;
+  transform: scale(1.05);
 }
 
 /* === Project Section === */

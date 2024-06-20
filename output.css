@@ -99,6 +99,7 @@ nav {
   text-align: center;
   padding-bottom: 5px;
   z-index: 4;
+  border: red 1px solid;
 }
 
 .one h1:before {
@@ -131,7 +132,7 @@ nav {
   flex-direction: column;
   align-items: center;
   padding-top: 8vh;
-  gap: 10vh;
+  gap: 4vh;
 }
 
 .container {
@@ -161,24 +162,41 @@ nav {
 
 /* === Skills Section === */
 .skills {
-  border: red 1px solid;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
+  width: 30%;
 }
 
 .skills h2 {
   text-align: center;
+  margin: 0;
+}
+
+.skill-detail {
+  flex-direction: column;
+  align-items: flex-start;
+  width: 95%;
+  margin-left: 5%;
 }
 
 .skill-list {
+  width: inherit;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   align-items: center;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  gap: 3px;
+  gap: 3%;
+}
+
+.skill {
+  border: var(--primary1) 1px solid;
+  padding: 3%;
+  transition: all 0.5s ease;
+}
+
+.skill:hover {
+  cursor: pointer;
+  transform: scale(1.05);
 }
 
 /* === Project Section === */
