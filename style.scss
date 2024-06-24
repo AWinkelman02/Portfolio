@@ -1,28 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
 :root{
-    --primary1: #00e2c4;
+  --primary1: #00e2c4;
 }
 
 body{
-    padding: 0px;
-    margin: 0px;
-    background-color: rgb(17, 18, 22);
-    color: white;
+  padding: 0px;
+  margin: 0px;
+  background-color: rgb(17, 18, 22);
+  color: white;
 
-    font-family: "Oswald", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 span{
-    color: var(--primary1);
-    text-shadow: 2px 2px #0099ff;
+  color: var(--primary1);
+  text-shadow: 2px 2px #0099ff;
+}
+
+a{
+  text-decoration: none;
 }
 
 .bx{
-    display: flex;
+  display: flex;
 }
 
 /* === Intro and Header Styles === */
@@ -79,13 +83,13 @@ nav{
   flex-direction: row;
   justify-content: end;
   list-style-type: none;
-  gap: 2rem;
+  gap: 3%;
 }
 
 .header a{
   text-decoration: none;
   color: white;
-  font-size: 16px;
+  font-size: 1.1rem;
   cursor: pointer;
 }
 
@@ -102,7 +106,6 @@ nav{
   text-align: center;
   padding-bottom: 5px;
   z-index: 4;
-  border: red 1px solid;
 }
 .one h1:before {
   width: 28px;
@@ -130,8 +133,6 @@ nav{
 /* === About Section === */
 
 .about{
-  border: red 1px solid;
-
   flex-direction: column;
   align-items: center;
   padding-top: 8vh;
@@ -139,15 +140,11 @@ nav{
 }
 
 .container{
-  border: red 1px solid;
-
   justify-content: space-between;
   width: 60vw;
 }
 
 .overview{
-  border: red 1px solid;
-
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -211,7 +208,7 @@ nav{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 4vh;
+  padding-top: 8vh;
 }
 
 .project{
@@ -266,20 +263,19 @@ nav{
 /* === Contact Section === */
 
 .contact{
-    border: red 1px solid;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-top: 4vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 4vh;
 }
 
 /* === Background Animations === */
 
 #particle-canvas {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
 }
 
 /* === Button Stylings === */
@@ -397,12 +393,12 @@ nav{
 }
 @-webkit-keyframes slide-in-blurred-left {
   0% {
-    -webkit-transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
-            transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
+    -webkit-transform: translateX(-60px) scaleX(1) scaleY(1);
+            transform: translateX(-60px) scaleX(1) scaleY(1);
     -webkit-transform-origin: 100% 50%;
             transform-origin: 100% 50%;
-    -webkit-filter: blur(40px);
-            filter: blur(40px);
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
     opacity: 0;
   }
   100% {
@@ -417,12 +413,12 @@ nav{
 }
 @keyframes slide-in-blurred-left {
   0% {
-    -webkit-transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
-            transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
+    -webkit-transform: translateX(-60px) scaleX(1) scaleY(1);
+            transform: translateX(-60px) scaleX(1) scaleY(1);
     -webkit-transform-origin: 100% 50%;
             transform-origin: 100% 50%;
-    -webkit-filter: blur(40px);
-            filter: blur(40px);
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
     opacity: 0;
   }
   100% {
