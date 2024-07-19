@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="output.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Alec Winkelman</title>
@@ -17,6 +18,7 @@
         </div>
     </div>
     <main>
+        <canvas class="body-canvas" id="body-canvas"></canvas>
         <nav>
             <ul class="header">
                 <li><a class="nav-control" data="Home">Home</a></li>
@@ -49,6 +51,7 @@
                             <p class="skill" data-aos="flip-right" data-aos-delay="100">CSS</p>
                             <p class="skill" data-aos="flip-right" data-aos-delay="150">SCSS</p>
                             <p class="skill" data-aos="flip-right" data-aos-delay="200">Javascript</p>
+                            <p class="skill" data-aos="flip-right" data-aos-delay="250">React</p>
                         </div>
                        <h2>Back-End</h2>
                         <div class="skill-list">
@@ -143,21 +146,11 @@
             <div class="one">
                 <h1 class="section-title">Contact</h1>
             </div>
-            <form id="fcf-form-id" class="form" method="post" action="submission.php">
-                <label for="Name" class="fcf-label">Your name</label>
-                <div class="fcf-input-group">
-                    <input type="text" id="Name" name="Name" class="fm form-input" required>
-                </div>
-                <div class="fcf-form-group">
-                    <label for="Email" class="fcf-label">Your email address</label>
-                    <div class="fcf-input-group">
-                        <input type="email" id="Email" name="Email" class="fm form-input" required>
-                    </div>
-                <div class="fcf-form-group">
-                    <label for="Message" class="fcf-label">Your message</label>
-                    <div class="fcf-input-group">
-                        <textarea id="Message" name="Message" class="fm form-text" rows="6" maxlength="3000" required></textarea>
-                    </div>
+            <form id="fcf-form-id" class="form" method="POST" action="https://formspree.io/f/xkgwowoy">
+                <div class="bx input-group">
+                    <input type="text" id="Name" name="Name" class="fm form-input" placeholder="Your Name" required>
+                    <input type="email" id="Email" name="Email" class="fm form-input" placeholder="Your Email Address" required>
+                    <textarea id="Message" name="Message" class="fm form-text" rows="6" maxlength="3000" placeholder="Your Message" required></textarea>
                 </div>
                 <div class="bx form-button">
                     <button type="submit" id="fcf-button" class="preview">Send</button>
@@ -172,7 +165,7 @@
         </a>
     </footer>
     <script src="particle-wave.js"></script>
-    <!--<script src="particle-background.js"></script>-->
+    <script src="particle-background.js"></script>
     <script src="scrolling.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
