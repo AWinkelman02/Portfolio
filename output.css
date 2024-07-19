@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
 :root {
   --primary1: #00e2c4;
+  --background: rgb(17, 18, 22);
+  --accent1: rgb(21, 22, 27);
+  --secondary: rgb(39, 39, 39);
 }
 
 body {
@@ -34,10 +37,16 @@ a {
   justify-content: center;
   height: 100vh;
   font-size: 1.5rem;
+  position: relative;
+}
+
+.intro h1 {
+  z-index: 10;
 }
 
 .learn {
   z-index: 99;
+  margin-top: 30px;
   cursor: pointer;
 }
 
@@ -59,13 +68,6 @@ button {
   font-style: normal;
 }
 
-#resume {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: 101;
-}
-
 nav {
   padding: 0.1vh;
   background-color: rgb(39, 39, 39);
@@ -73,6 +75,7 @@ nav {
   position: sticky;
   top: 0;
   z-index: 6;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 8px 0px;
 }
 
 .header {
@@ -118,6 +121,38 @@ nav {
 }
 
 .one h1:after {
+  width: 100px;
+  height: 1px;
+  display: block;
+  content: "";
+  position: relative;
+  margin-top: 10px;
+  left: 50%;
+  margin-left: -50px;
+  background-color: var(--primary1);
+}
+
+.one h2 {
+  text-align: center;
+  padding-bottom: 5px;
+  z-index: 4;
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+.one h2:before {
+  width: 28px;
+  height: 5px;
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: 3px;
+  left: 50%;
+  margin-left: -14px;
+  background-color: var(--primary1);
+}
+
+.one h2:after {
   width: 100px;
   height: 1px;
   display: block;
@@ -199,6 +234,18 @@ nav {
   transform: scale(1.05);
 }
 
+/* === Timeline Section === */
+.cd {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.time {
+  width: 100%;
+  background-color: var(--accent1);
+}
+
 /* === Project Section === */
 .project-list {
   flex-direction: column;
@@ -260,6 +307,34 @@ nav {
   align-items: center;
   justify-content: center;
   padding-top: 4vh;
+  padding: 30px;
+}
+
+.fm {
+  background-color: var(--accent1);
+}
+
+.form-input {
+  width: 20vw;
+}
+
+.form-text {
+  width: 20vw;
+}
+
+.form-button {
+  justify-content: end;
+}
+
+/* === Footer Section === */
+footer {
+  width: 100%;
+  height: 100px;
+  margin: 0px;
+  padding: 0px;
+  background-color: var(--secondary);
+  align-items: center;
+  justify-content: center;
 }
 
 /* === Background Animations === */
@@ -372,6 +447,176 @@ nav {
     transform: translateX(0);
   }
 }
+.resume,
+.resume *,
+.resume :after,
+.resume :before,
+.resume:after,
+.resume:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+
+.resume {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  text-transform: uppercase;
+  position: fixed;
+  bottom: 5%;
+  left: 3%;
+  z-index: 101;
+}
+
+.resume:disabled {
+  cursor: default;
+}
+
+.resume:-moz-focusring {
+  outline: auto;
+}
+
+.resume svg {
+  vertical-align: middle;
+}
+
+.resume [hidden] {
+  display: none;
+}
+
+.resume {
+  background: rgba(78, 78, 78, 0.8);
+  background-clip: content-box;
+  border-radius: 50%;
+  box-sizing: border-box;
+  display: flex;
+  width: 50px;
+  height: 50px;
+  -webkit-mask-image: none;
+  padding: 0;
+  position: relative;
+  transition: 0.2s;
+  position: fixed;
+  bottom: 5%;
+  left: 3%;
+  z-index: 101;
+  align-items: center;
+  justify-content: center;
+}
+
+.resume:hover {
+  background: #fff;
+}
+
+.resume svg {
+  --size: 70px;
+  fill: #fff;
+  display: block;
+  height: var(--size);
+  left: calc(50% - var(--size) / 2);
+  position: absolute;
+  top: calc(50% - var(--size) / 2);
+  width: var(--size);
+}
+
+.resume:hover svg {
+  fill: #000;
+}
+
+.resume:before {
+  border: 5px solid #fff;
+  border-radius: 50%;
+  content: "";
+  inset: 1px;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  transform: scale(2);
+  transition: 0.2s;
+}
+
+.resume:hover:before {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.learn,
+.learn *,
+.learn :after,
+.learn :before,
+.learn:after,
+.learn:before {
+  border: 0 solid --primary1;
+  box-sizing: border-box;
+}
+
+.learn {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: rgba(39, 39, 39, 0);
+  background-image: none;
+  color: var(--primary1);
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-top: 40px;
+  -webkit-mask-image: -webkit-radial-gradient(#000, --primary1);
+  padding: 0;
+}
+
+.learn:disabled {
+  cursor: default;
+}
+
+.learn:-moz-focusring {
+  outline: auto;
+}
+
+.learn svg {
+  display: block;
+  vertical-align: middle;
+}
+
+.learn [hidden] {
+  display: none;
+}
+
+.learn {
+  -webkit-animation: pulse 2s infinite;
+  animation: pulse 2s infinite;
+  border: 1px solid;
+  border-radius: 999px;
+  box-shadow: 0 0 0 2em transparent;
+  box-sizing: border-box;
+  display: block;
+  font-weight: 900;
+  -webkit-mask-image: none;
+  overflow: hidden;
+  padding: 1rem 3rem;
+  position: relative;
+  text-transform: uppercase;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--primary1);
+  }
+}
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--primary1);
+  }
+}
 /* === Animations === */
 .slide-in-blurred-left {
   -webkit-animation: slide-in-blurred-left 0.5s linear both;
@@ -460,6 +705,35 @@ nav {
     transform-origin: 50% 50%;
     -webkit-filter: blur(0);
     filter: blur(0);
+    opacity: 1;
+  }
+}
+.slide-in-bottom {
+  -webkit-animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s both;
+  animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s both;
+}
+
+@-webkit-keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(1000px);
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(1000px);
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
     opacity: 1;
   }
 }

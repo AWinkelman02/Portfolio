@@ -29,7 +29,6 @@
             <div class="one">
                 <h1 class="section-title">About Me</h1>
             </div>
-            
             <div class="bx container">
                 <div class="bx overview" data-aos="fade-right">
                     <img src="./images/avatar.png" alt="photo" class="photo">
@@ -67,6 +66,33 @@
                     </div>
                 </div>
             </div>
+
+            <!--
+            <div class="bx time">
+                <div class="cd time">
+                    <div class="one">
+                        <h2 class="section-title">Past</h2>
+                    </div>
+                    <p>I learned of my passion for coding during my time in college <br>
+                        when I took a few coding courses. I did not fully pursue this <br>
+                        passion during my college years but I did apply my coding skills <br>
+                        when I could during and after college.</p>
+                </div>
+                <div class="cd time">
+                    <div class="one">
+                        <h2 class="section-title">Present</h2>
+                    </div>
+                    <p></p>
+                </div>
+                <div class="cd time">
+                    <div class="one">
+                        <h2 class="section-title">Future</h2>
+                    </div>
+                    <p></p>
+                </div>
+            </div>
+            -->
+
         </div>
         <div class="bx project-list" id="Projects">
             <div class="one">
@@ -117,32 +143,39 @@
             <div class="one">
                 <h1 class="section-title">Contact</h1>
             </div>
-        </div>
-        <div class="bx skills">
-            <div class="cd time">
-                <h2>Past</h2>
-                <p>I learned of my passion for coding during my time in college <br>
-                    when I took a few coding courses. I did not fully pursue this <br>
-                    passion during my college years but I did apply my coding skills <br>
-                    when I could during and after college.</p>
-            </div>
-            <div class="cd time">
-                <h2>Present</h2>
-                <p></p>
-            </div>
-            <div class="cd time">
-                <h2>Future</h2>
-                <p></p>
-            </div>
+            <form id="fcf-form-id" class="form" method="post" action="submission.php">
+                <label for="Name" class="fcf-label">Your name</label>
+                <div class="fcf-input-group">
+                    <input type="text" id="Name" name="Name" class="fm form-input" required>
+                </div>
+                <div class="fcf-form-group">
+                    <label for="Email" class="fcf-label">Your email address</label>
+                    <div class="fcf-input-group">
+                        <input type="email" id="Email" name="Email" class="fm form-input" required>
+                    </div>
+                <div class="fcf-form-group">
+                    <label for="Message" class="fcf-label">Your message</label>
+                    <div class="fcf-input-group">
+                        <textarea id="Message" name="Message" class="fm form-text" rows="6" maxlength="3000" required></textarea>
+                    </div>
+                </div>
+                <div class="bx form-button">
+                    <button type="submit" id="fcf-button" class="preview">Send</button>
+                </div>
+            </form>
         </div>
     </main>
-    <footer>
+    <button class="resume slide-in-bottom" id="resume"><box-icon name="file" color="#00e2c4"></box-icon></button>
+    <footer class="bx">
+        <a class="foot" href="https://github.com/AWinkelman02/Photo-Tagging-App">
+            <box-icon type="logo" name='github' color="#00e2c4" size="lg"></box-icon>
+        </a>
     </footer>
-    <button id="resume">Resume</button>
     <script src="particle-wave.js"></script>
-    <script src="particle-background.js"></script>
+    <!--<script src="particle-background.js"></script>-->
     <script src="scrolling.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script>
         AOS.init();
       </script>
