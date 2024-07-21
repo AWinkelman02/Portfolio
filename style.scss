@@ -19,8 +19,8 @@ body{
   font-style: normal;
   z-index: 1;
   width: 100vw;
-  position: absolute;
-  overflow:auto;
+  overflow-x: hidden;
+  position: relative;
 }
 
 span{
@@ -119,12 +119,11 @@ nav{
 }
 
 .body-canvas{
-  position: sticky;
   position: fixed;
   top: 0;
   z-index: 2;
-  width: 100%;
   height: 100%;
+  width: 100%;
 }
 
 /* === HEADING STYLE === */
@@ -198,7 +197,7 @@ nav{
 
 .container{
 
-  grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   width: 60vw;
   z-index: 10;
 }
@@ -819,7 +818,6 @@ nav{
 @media only screen and (min-width: 300px) {
   body{
     width: 100vw;
-    border: blue 1px solid;
   }
 
   .intro{
@@ -837,18 +835,35 @@ nav{
 
   main{
     width: 100%;
-    border: purple 1px solid;
   }
 
   .body-canvas{
     width: 100%;
-    border: green 1px solid;
   }
 
   .container{
     width: auto;
     padding: 10px;
   }
+
+  .overview{
+    justify-self: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .photo{
+    width: 60vw;
+    height: auto;
+  }
+  
+  .overview p{
+    font-size: 4vw;
+    text-align: center;
+  }
+
 
   .header{
     justify-content: space-around;
@@ -865,7 +880,7 @@ nav{
 
   .project img{
     height: auto;
-    width: 100vw;
+    width: 95vw;
     transition: all .5s ease;
     z-index: 10;
   }
@@ -910,7 +925,6 @@ nav{
 /* Large devices such as laptops (900px and up) */
 @media only screen and (min-width: 700px) {
   .container{
-    border: red 1px solid;
     width: 60%;
   }
 
@@ -927,7 +941,6 @@ nav{
   }
   
   .project{
-    border: green 1px solid;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -949,8 +962,6 @@ nav{
   }
   
   .project-details{
-    border: green 1px solid;
-  
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -991,5 +1002,25 @@ nav{
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
     padding: 5px;
     z-index: 10;
+  }
+
+  .overview{
+
+    justify-self: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    width: 100%;
+  }
+  
+  .photo{
+    width: 300px;
+    height: auto;
+  }
+  
+  .overview p{
+    font-size: 1.3rem;
+    text-align: center;
   }
 }
