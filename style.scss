@@ -300,8 +300,6 @@ nav{
 }
 
 .project{
-  border: green 1px solid;
-
   justify-content: center;
   align-items: center;
   gap: 2rem;
@@ -322,8 +320,6 @@ nav{
 }
 
 .project-details{
-  border: green 1px solid;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -833,26 +829,23 @@ nav{
   .intro h1{
     position: relative;
     text-align: center;
-
-    border: red 1px solid;
   }
 
   .intro-background{
-    width: 100vw;
+    width: 100%;
   }
 
   main{
-    width: 100vw;
-    border: red 1px solid;
+    width: 100%;
+    border: purple 1px solid;
   }
 
   .body-canvas{
-    width: 100vw;
-    border: red 1px solid;
+    width: 100%;
+    border: green 1px solid;
   }
 
   .container{
-    border: red 1px solid;
     width: auto;
     padding: 10px;
   }
@@ -862,8 +855,6 @@ nav{
   }
 
   .project{
-    border: yellow 1px solid;
-  
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -880,8 +871,6 @@ nav{
   }
 
   .project-details{
-    border: green 1px solid;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -902,6 +891,18 @@ nav{
   
   .project-desc{
     font-size: 3vw;
+  }
+
+  .form-input,
+  .form-text{
+    font-family: "Oswald", sans-serif;
+    font-size: 1.1rem;
+    width: 60vw;
+    border: none;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    padding: 5px;
+    z-index: 10;
   }
 
 }
@@ -978,5 +979,17 @@ nav{
   
   .project-img-left{
     box-shadow: -10px 10px 0px 0px var(--primary1);
+  }
+
+  .form-input,
+  .form-text{
+    font-family: "Oswald", sans-serif;
+    font-size: 1.1rem;
+    width: 25vw;
+    border: none;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    padding: 5px;
+    z-index: 10;
   }
 }
