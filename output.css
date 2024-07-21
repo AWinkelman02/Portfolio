@@ -807,9 +807,11 @@ nav {
 @media only screen and (min-width: 300px) {
   body {
     width: 100vw;
+    overflow-x: hidden;
+    position: relative;
   }
   .intro {
-    width: 100vw;
+    width: 100%;
   }
   .intro h1 {
     position: relative;
