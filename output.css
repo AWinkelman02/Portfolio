@@ -31,6 +31,10 @@ a {
   display: flex;
 }
 
+.gd {
+  display: grid;
+}
+
 main {
   z-index: 10;
 }
@@ -189,7 +193,7 @@ nav {
 }
 
 .container {
-  justify-content: space-between;
+  grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
   width: 60vw;
   z-index: 10;
 }
@@ -199,7 +203,7 @@ nav {
   align-items: center;
   justify-content: center;
   font-size: large;
-  width: 50%;
+  width: 100%;
 }
 
 .photo {
@@ -217,7 +221,8 @@ nav {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 30%;
+  width: 50%;
+  justify-self: center;
 }
 
 .skills h2 {
@@ -790,5 +795,10 @@ nav {
     opacity: 1;
   }
 }
+/* === Media Queries === */
+/* Small devices such as large phones (640px and up) */
+/* Medium devices such as tablets (768px and up) */
+/* Large devices such as laptops (1024px and up) */
+/* Largest devices such as desktops (1280px and up) */
 
 /*# sourceMappingURL=output.css.map */
