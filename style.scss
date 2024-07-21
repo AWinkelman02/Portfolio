@@ -820,6 +820,7 @@ nav{
     width: 100vw;
     overflow-x: hidden;
     position: relative;
+    touch-action: none;
   }
 
   .intro{
@@ -833,15 +834,21 @@ nav{
 
   .intro-background{
     width: 100%;
+    overflow-x: hidden;
+    touch-action: none;
   }
 
   main{
     width: 100%;
+    overflow-x: hidden;
+    touch-action: none;
   }
 
   .body-canvas{
-    
+    height: 100%;
     width: 100%;
+    overflow-x: hidden;
+    touch-action: none;
   }
 
   .container{
@@ -1026,4 +1033,10 @@ nav{
     font-size: 1.3rem;
     text-align: center;
   }
+
+  .body-canvas{
+    height: 100%;
+    width: 100%;
+  }
+
 }
