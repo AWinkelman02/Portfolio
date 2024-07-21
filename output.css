@@ -41,6 +41,7 @@ main {
 
 /* === Intro and Header Styles === */
 .intro {
+  border: red 1px solid;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -155,7 +156,7 @@ nav {
   text-align: center;
   padding-bottom: 5px;
   z-index: 4;
-  font-size: 1.5rem;
+  font-size: 2.3rem;
   margin-bottom: 0;
 }
 
@@ -199,6 +200,7 @@ nav {
 }
 
 .overview {
+  justify-self: center;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -218,11 +220,16 @@ nav {
 
 /* === Skills Section === */
 .skills {
+  gap: 50px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 50%;
+  width: 100%;
   justify-self: center;
+}
+
+.skills h1 {
+  text-align: center;
 }
 
 .skills h2 {
@@ -232,22 +239,21 @@ nav {
 
 .skill-detail {
   flex-direction: column;
-  align-items: flex-start;
-  width: 95%;
-  margin-left: 5%;
+  align-items: center;
+  width: 100%;
 }
 
 .skill-list {
   width: inherit;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   gap: 3%;
 }
 
 .skill {
   border: var(--primary1) 1px solid;
-  padding: 3%;
+  padding: 10px;
   transition: all 0.5s ease;
 }
 
@@ -797,6 +803,31 @@ nav {
 }
 /* === Media Queries === */
 /* Small devices such as large phones (640px and up) */
+@media only screen and (min-width: 300px) {
+  body {
+    width: 100vw;
+    border: blue 1px solid;
+  }
+  .intro {
+    width: 100vw;
+  }
+  .intro h1 {
+    position: relative;
+    text-align: center;
+    border: red 1px solid;
+  }
+  .intro-background {
+    width: 100vw;
+  }
+  main {
+    width: 100vw;
+    border: red 1px solid;
+  }
+  .body-canvas {
+    width: 100vw;
+    border: red 1px solid;
+  }
+}
 /* Medium devices such as tablets (768px and up) */
 /* Large devices such as laptops (1024px and up) */
 /* Largest devices such as desktops (1280px and up) */
