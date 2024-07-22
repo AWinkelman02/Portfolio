@@ -875,6 +875,10 @@ nav{
     justify-content: space-around;
   }
 
+  .project-list{
+    overflow-y: hidden;
+  }
+
   .project{
     display: grid;
     grid-template-columns: 1fr;
