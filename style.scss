@@ -255,13 +255,16 @@ nav{
 }
 
 .skill-list{
-
-
   width: inherit;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 3%;
+}
+
+.ct:hover{
+  cursor: pointer;
+  transform: scale(1.08);
 }
 
 .skill{
@@ -652,6 +655,11 @@ nav{
   -webkit-mask-image: -webkit-radial-gradient(#000, --primary1);
   padding: 0;
 }
+
+.learn:hover {
+  transform: scale(1.2);
+}
+
 .learn:disabled {
   cursor: default;
 }
