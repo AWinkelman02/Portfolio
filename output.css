@@ -816,7 +816,6 @@ nav {
 @media only screen and (min-width: 300px) {
   body {
     width: 100vw;
-    overflow-x: hidden;
     position: relative;
   }
   .intro {
@@ -829,6 +828,10 @@ nav {
   }
   .intro-background {
     width: 100%;
+  }
+  main {
+    overflow-x: hidden;
+    overflow-y: hidden;
   }
   .body-canvas {
     height: 100%;
