@@ -832,6 +832,7 @@ nav {
   }
   main {
     width: 100%;
+    overflow-y: hidden;
   }
   .body-canvas {
     height: 100%;
@@ -922,6 +923,9 @@ nav {
   }
   .header {
     justify-content: end;
+  }
+  main {
+    overflow-y: visible;
   }
   nav {
     position: sticky;

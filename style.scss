@@ -847,7 +847,7 @@ nav{
 
   main{
     width: 100%;
-
+    overflow-y: hidden;
   }
 
   .body-canvas{
@@ -961,7 +961,7 @@ nav{
   }
 
   main{
-
+    overflow-y: visible;
   }
 
   nav{
