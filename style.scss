@@ -847,7 +847,7 @@ nav{
 
   main{
     width: 100%;
-    overflow-x: hidden;
+
   }
 
   .body-canvas{
@@ -943,6 +943,11 @@ nav{
     z-index: 10;
   }
 
+  nav{
+    position: sticky;
+    top: 0;
+  }
+
 }
 
 /* Large devices such as laptops (900px and up) */
@@ -956,7 +961,13 @@ nav{
   }
 
   main{
-    overflow-y: hidden;
+
+  }
+
+  nav{
+    position: sticky;
+    top: 0;
+    border: red 1px solid;
   }
 
   .project-list{

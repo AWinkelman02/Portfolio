@@ -832,7 +832,6 @@ nav {
   }
   main {
     width: 100%;
-    overflow-x: hidden;
   }
   .body-canvas {
     height: 100%;
@@ -911,6 +910,10 @@ nav {
     padding: 5px;
     z-index: 10;
   }
+  nav {
+    position: sticky;
+    top: 0;
+  }
 }
 /* Large devices such as laptops (900px and up) */
 @media only screen and (min-width: 700px) {
@@ -920,8 +923,10 @@ nav {
   .header {
     justify-content: end;
   }
-  main {
-    overflow-y: hidden;
+  nav {
+    position: sticky;
+    top: 0;
+    border: red 1px solid;
   }
   .project-list {
     flex-direction: column;
