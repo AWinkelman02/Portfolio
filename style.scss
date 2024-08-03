@@ -962,7 +962,7 @@ nav{
   }
 
   main{
-    overflow-y: visible;
+    overflow: hidden;
   }
 
   nav{
@@ -976,6 +976,7 @@ nav{
     justify-content: center;
     padding-top: 8vh;
     z-index: 10;
+    overflow: auto;
   }
   
   .project{

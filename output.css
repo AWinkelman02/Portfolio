@@ -924,7 +924,7 @@ nav {
     justify-content: end;
   }
   main {
-    overflow-y: visible;
+    overflow: hidden;
   }
   nav {
     position: sticky;
@@ -936,6 +936,7 @@ nav {
     justify-content: center;
     padding-top: 8vh;
     z-index: 10;
+    overflow: auto;
   }
   .project {
     display: flex;
